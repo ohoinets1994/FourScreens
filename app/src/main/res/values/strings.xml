@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FourScreens</string>
+    <string name="start">START</string>
+    <string name="list">LIST</string>
+    <string name="saved_img">Saved image: </string>
+    <string name="cropped_face_img">Cropped Face: </string>
+</resources>
