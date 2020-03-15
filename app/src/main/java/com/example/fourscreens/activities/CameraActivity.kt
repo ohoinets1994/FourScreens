@@ -22,7 +22,7 @@ class CameraActivity : AppCompatActivity(), CvCameraViewListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.actitvity_test)
+        setContentView(R.layout.actitvity_camera)
 
         openCvCameraView = findViewById<View>(R.id.jcvOpenCV) as JavaCameraView
         openCvCameraView.setCvCameraViewListener(this)
@@ -42,7 +42,7 @@ class CameraActivity : AppCompatActivity(), CvCameraViewListener {
         try {
             val inputStream = resources.openRawResource(R.raw.haarcascade_frontalface_alt2)
             val cascadeDir = getDir("cascade", Context.MODE_PRIVATE)
-            val mCascadeFile = File(cascadeDir, "lbpcascade_frontalface.xml")
+            val mCascadeFile = File(cascadeDir, "haarcascade_frontalface_alt2.xml")
             val outputStream = FileOutputStream(mCascadeFile)
             val buffer = ByteArray(4096)
             var bytesRead: Int

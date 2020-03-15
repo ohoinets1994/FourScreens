@@ -20,7 +20,7 @@ class HomeFragment : Fragment() {
 
 
         btnStart.setOnClickListener {
-            startActivityForResult(Intent(activity, CameraActivity::class.java), 0)
+            startActivity(Intent(activity, CameraActivity::class.java))
         }
 
         btnList.setOnClickListener {
